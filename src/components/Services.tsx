@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Microscope, Heart, TestTube, Stethoscope, Brain, Dna } from "lucide-react";
+import labEquipment from "@/assets/lab-equipment.jpg";
+import medicalStaff from "@/assets/medical-staff.jpg";
 
 const services = [
   {
@@ -31,6 +33,11 @@ const services = [
     icon: <Stethoscope className="h-8 w-8" />,
     title: "Immunology",
     description: "Immune system function and antibody testing"
+  },
+  {
+    icon: <TestTube className="h-8 w-8" />,
+    title: "Serology",
+    description: "Blood serum analysis and infectious disease testing"
   }
 ];
 
@@ -39,7 +46,7 @@ const Services = () => {
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-poppins">
             Our <span className="text-primary">Medical Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -63,9 +70,20 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 space-y-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="relative overflow-hidden rounded-lg shadow-medical">
+              <img src={labEquipment} alt="Modern Laboratory Equipment" className="w-full h-64 object-cover" />
+              <div className="absolute inset-0 bg-primary/20"></div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-medical">
+              <img src={medicalStaff} alt="Professional Medical Staff" className="w-full h-64 object-cover" />
+              <div className="absolute inset-0 bg-secondary/20"></div>
+            </div>
+          </div>
+          
           <Card className="max-w-4xl mx-auto p-8 bg-gradient-hero border-primary/20 shadow-medical">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-poppins">
               All Types of Blood & Other Investigations Done Here
             </h3>
             <p className="text-muted-foreground text-lg mb-6">

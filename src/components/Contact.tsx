@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-poppins">
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -46,9 +46,9 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Working Hours</h3>
                   <div className="space-y-1 text-muted-foreground">
-                    <p><strong>Monday - Saturday:</strong> 6:30 AM - 7:30 PM</p>
-                    <p><strong>Sunday:</strong> 6:30 AM - 1:00 PM</p>
-                    <p className="text-sm text-primary mt-2">Currently Open • Closes 7 PM</p>
+                    <p><strong>Monday - Saturday:</strong> 7:00 AM - 9:00 PM</p>
+                    <p><strong>Sunday:</strong> 7:00 AM - 2:00 PM</p>
+                    <p className="text-sm text-primary mt-2">Currently Open • Closes 9 PM</p>
                   </div>
                 </div>
               </div>
