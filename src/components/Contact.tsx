@@ -107,7 +107,7 @@ const Contact = () => {
                 <div className="text-center">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="medical" size="lg" className="w-full text-lg py-6 hover:scale-105 transition-all duration-300 animate-pulse-soft">
+                      <Button variant="medical" size="lg" className="w-full text-lg py-6 hover:scale-105 transition-all duration-300 animate-pulse-soft flex items-center justify-center gap-2">
                         <Phone className="h-5 w-5" />
                         📞 Call for Appointment
                       </Button>
@@ -142,7 +142,7 @@ const Contact = () => {
                 <div className="text-center">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="appointment" size="lg" className="w-full text-lg py-6 hover:scale-105 transition-all duration-300">
+                      <Button variant="appointment" size="lg"  className="w-full text-lg py-6 flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300">
                         <Calendar className="h-5 w-5" />
                         🏠 Request Home Collection
                       </Button>
