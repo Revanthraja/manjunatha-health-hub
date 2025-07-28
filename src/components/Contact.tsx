@@ -9,8 +9,9 @@ const Contact = () => {
       <div className="container mx-auto px-4 max-w-7xl overflow-hidden">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6 font-poppins bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-slide-up">
-            Get In <span className="animate-pulse-soft">Touch</span>
-          </h2>
+                Get&nbsp;In <span className="animate-pulse-soft">Touch</span>
+                                          </h2>
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-inter animate-slide-up delay-200">
             Ready to take care of your health? Contact us for appointments, queries, or home collection services.
             <span className="block mt-2 text-primary font-semibold">Your health is our priority! 🌟</span>
