@@ -6,7 +6,7 @@ import { Phone, MapPin, Clock, Mail, Navigation, Calendar, Users, Award, Shield 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl overflow-hidden">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6 font-poppins bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-slide-up">
             Get In <span className="animate-pulse-soft">Touch</span>
