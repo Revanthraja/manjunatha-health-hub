@@ -132,10 +132,12 @@ const Packages = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                  <Phone className="h-4 w-4" />
-                  Book Now
-                </Button>
+                <a href="#contact" className="w-full">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground flex items-center justify-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      Book Now
+                    </Button>
+                  </a>
               </CardContent>
             </Card>
           ))}
