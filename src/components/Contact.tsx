@@ -93,12 +93,12 @@ const Contact = () => {
           </div>
 
           <div className="space-y-6 animate-slide-up delay-500">
-            <Card className="p-8 bg-gradient-hero shadow-medical border-primary/20 hover:shadow-glow transition-all duration-500 animate-bounce-in delay-700">
+            <Card className="p-4 md:p-8 bg-white shadow-medical border-primary/20 hover:shadow-glow transition-all duration-500 animate-bounce-in delay-700">
               <CardHeader className="text-center pb-6">
-                <CardTitle className="text-3xl font-bold text-foreground font-poppins bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-foreground font-poppins">
                   🩺 Schedule Your Appointment
                 </CardTitle>
-                <p className="text-muted-foreground font-inter text-lg">
+                <p className="text-foreground font-inter text-base md:text-lg">
                   Call us or visit our clinic for comprehensive diagnostic services
                 </p>
               </CardHeader>
