@@ -179,7 +179,7 @@ const Contact = () => {
 
                 <div className="border-t border-border pt-6">
                   <h4 className="font-bold text-foreground mb-4 text-center font-poppins text-lg">✨ Why Choose Us?</h4>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div className="text-center p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all duration-300 group animate-bounce-in delay-1000">
                       <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">👨‍⚕️</div>
                       <div className="font-bold text-primary font-poppins">Expert Staff</div>
