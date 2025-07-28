@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div className="space-y-6 animate-slide-up delay-300">
             <Card className="p-6 bg-gradient-card shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
