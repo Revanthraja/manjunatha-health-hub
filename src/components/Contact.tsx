@@ -120,14 +120,14 @@ const Contact = () => {
                         <div className="text-center p-6 bg-white rounded-lg border">
                           <h3 className="text-2xl font-bold text-primary font-poppins mb-4">Call Us Now!</h3>
                           <div className="space-y-3">
-                            <div className="p-3 bg-primary/10 rounded-lg">
+                            <a href="tel:9900088282" className="block p-3 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
                               <p className="text-lg font-bold text-primary">📞 9900088282</p>
                               <p className="text-sm text-muted-foreground">Primary Contact</p>
-                            </div>
-                            <div className="p-3 bg-secondary/10 rounded-lg">
+                            </a>
+                            <a href="tel:9900088181" className="block p-3 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors cursor-pointer">
                               <p className="text-lg font-bold text-secondary">📞 9900088181</p>
                               <p className="text-sm text-muted-foreground">Alternate Contact</p>
-                            </div>
+                            </a>
                           </div>
                           <div className="mt-4 space-y-2">
                             <p className="text-sm text-muted-foreground">For appointments & queries</p>
@@ -156,10 +156,10 @@ const Contact = () => {
                           <h3 className="text-xl font-bold text-secondary font-poppins mb-2">Free Home Collection!</h3>
                           <p className="font-inter text-foreground">Convenient sample collection at your doorstep</p>
                           <div className="mt-4 space-y-3">
-                            <div className="p-3 bg-primary/10 rounded-lg">
+                            <a href="tel:9900088282" className="block p-3 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
                               <p className="text-lg font-bold text-primary">📞 9900088282</p>
                               <p className="text-sm text-muted-foreground">Call for home collection</p>
-                            </div>
+                            </a>
                           </div>
                           <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                             <div className="bg-primary/10 p-3 rounded-lg">
