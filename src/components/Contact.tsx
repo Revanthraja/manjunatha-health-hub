@@ -17,9 +17,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">`
-          <div className="space-y-4 lg:space-y-6 animate-slide-up delay-300">
-            <Card className="p-4 lg:p-6 bg-white shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6 animate-slide-up delay-300">
+            <Card className="p-6 bg-gradient-card shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary transition-all duration-300 animate-bounce-in">
                   <MapPin className="h-6 w-6 text-primary group-hover:text-white" />
@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-4 lg:p-6 bg-white shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
+            <Card className="p-6 bg-gradient-card shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-secondary/10 rounded-full group-hover:bg-secondary transition-all duration-300 animate-bounce-in delay-100">
                   <Clock className="h-6 w-6 text-secondary group-hover:text-white" />
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-4 lg:p-6 bg-white shadow-soft border-primary/10">
+            <Card className="p-6 bg-gradient-card shadow-soft border-primary/10">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <Mail className="h-6 w-6 text-primary" />
@@ -92,8 +92,8 @@ const Contact = () => {
             </Card>
           </div>
 
-          <div className="space-y-4 lg:space-y-6 animate-slide-up delay-500">
-            <Card className="p-6 lg:p-8 bg-white shadow-medical border-primary/20 hover:shadow-glow transition-all duration-500 animate-bounce-in delay-700">
+          <div className="space-y-6 animate-slide-up delay-500">
+            <Card className="p-8 bg-gradient-hero shadow-medical border-primary/20 hover:shadow-glow transition-all duration-500 animate-bounce-in delay-700">
               <CardHeader className="text-center pb-6">
                 <CardTitle className="text-3xl font-bold text-foreground font-poppins bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   🩺 Schedule Your Appointment
@@ -107,7 +107,7 @@ const Contact = () => {
                 <div className="text-center">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="medical" size="lg" className="w-full text-base lg:text-lg py-4 lg:py-6 hover:scale-105 transition-all duration-300 animate-pulse-soft">
+                      <Button variant="medical" size="lg" className="w-full text-lg py-6 hover:scale-105 transition-all duration-300 animate-pulse-soft">
                         <Phone className="h-5 w-5" />
                         📞 Call for Appointment
                       </Button>
@@ -142,7 +142,7 @@ const Contact = () => {
                 <div className="text-center">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="appointment" size="lg" className="w-full text-base lg:text-lg py-4 lg:py-6 hover:scale-105 transition-all duration-300">
+                      <Button variant="appointment" size="lg" className="w-full text-lg py-6 hover:scale-105 transition-all duration-300">
                         <Calendar className="h-5 w-5" />
                         🏠 Request Home Collection
                       </Button>
@@ -177,28 +177,28 @@ const Contact = () => {
                   </Dialog>
                 </div>
 
-                <div className="border-t border-border pt-4 lg:pt-6">
-                  <h4 className="font-bold text-foreground mb-3 lg:mb-4 text-center font-poppins text-base lg:text-lg">✨ Why Choose Us?</h4>
-                  <div className="grid grid-cols-2 gap-3 lg:gap-4 text-xs lg:text-sm">
-                    <div className="text-center p-3 lg:p-4 bg-white border border-primary/20 rounded-lg hover:bg-primary/5 transition-all duration-300 group animate-bounce-in delay-1000">
-                      <div className="text-xl lg:text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">👨‍⚕️</div>
-                      <div className="font-bold text-primary font-poppins text-xs lg:text-sm">Expert Staff</div>
-                      <div className="text-muted-foreground font-inter text-xs">Qualified professionals</div>
+                <div className="border-t border-border pt-6">
+                  <h4 className="font-bold text-foreground mb-4 text-center font-poppins text-lg">✨ Why Choose Us?</h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="text-center p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all duration-300 group animate-bounce-in delay-1000">
+                      <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">👨‍⚕️</div>
+                      <div className="font-bold text-primary font-poppins">Expert Staff</div>
+                      <div className="text-muted-foreground font-inter">Qualified professionals</div>
                     </div>
-                    <div className="text-center p-3 lg:p-4 bg-white border border-secondary/20 rounded-lg hover:bg-secondary/5 transition-all duration-300 group animate-bounce-in delay-1100">
-                      <div className="text-xl lg:text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">⚡</div>
-                      <div className="font-bold text-secondary font-poppins text-xs lg:text-sm">Fast Reports</div>
-                      <div className="text-muted-foreground font-inter text-xs">Quick accurate results</div>
+                    <div className="text-center p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-all duration-300 group animate-bounce-in delay-1100">
+                      <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">⚡</div>
+                      <div className="font-bold text-secondary font-poppins">Fast Reports</div>
+                      <div className="text-muted-foreground font-inter">Quick accurate results</div>
                     </div>
-                    <div className="text-center p-3 lg:p-4 bg-white border border-primary/20 rounded-lg hover:bg-primary/5 transition-all duration-300 group animate-bounce-in delay-1200">
-                      <div className="text-xl lg:text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">💰</div>
-                      <div className="font-bold text-primary font-poppins text-xs lg:text-sm">Affordable</div>
-                      <div className="text-muted-foreground font-inter text-xs">Low cost services</div>
+                    <div className="text-center p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all duration-300 group animate-bounce-in delay-1200">
+                      <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">💰</div>
+                      <div className="font-bold text-primary font-poppins">Affordable</div>
+                      <div className="text-muted-foreground font-inter">Low cost services</div>
                     </div>
-                    <div className="text-center p-3 lg:p-4 bg-white border border-secondary/20 rounded-lg hover:bg-secondary/5 transition-all duration-300 group animate-bounce-in delay-1300">
-                      <div className="text-xl lg:text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">🏠</div>
-                      <div className="font-bold text-secondary font-poppins text-xs lg:text-sm">Home Collection</div>
-                      <div className="text-muted-foreground font-inter text-xs">Free pickup service</div>
+                    <div className="text-center p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-all duration-300 group animate-bounce-in delay-1300">
+                      <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-200">🏠</div>
+                      <div className="font-bold text-secondary font-poppins">Home Collection</div>
+                      <div className="text-muted-foreground font-inter">Free pickup service</div>
                     </div>
                   </div>
                 </div>
