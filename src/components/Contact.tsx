@@ -66,7 +66,7 @@ const Contact = () => {
                   <div className="space-y-2 text-muted-foreground font-inter">
                     <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-3 rounded-lg">
                       <p className="font-semibold text-primary"><strong>Monday - Saturday:</strong> 7:00 AM - 9:00 PM</p>
-                      <p className="font-semibold text-secondary"><strong>Sunday:</strong> 7:00 AM - 2:00 PM</p>
+                      <p className="font-semibold text-secondary"><strong>Sunday:</strong> 7:00 AM - 1:00 PM</p>
                     </div>
                     <div className="flex items-center gap-2 mt-3">
                       <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse-soft"></span>
