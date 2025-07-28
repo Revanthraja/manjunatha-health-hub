@@ -23,10 +23,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-2">
-            <Button variant="appointment" size="sm" className="hidden sm:flex">
-              <Phone className="h-4 w-4" />
-              Book Appointment
-            </Button>
+            <a href="#contact" className="hidden sm:flex">
+              <Button variant="appointment" size="sm" className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                Book Appointment
+              </Button>
+            </a>
           </div>
         </div>
       </div>
