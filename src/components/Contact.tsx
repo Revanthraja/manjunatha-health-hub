@@ -21,8 +21,8 @@ const Contact = () => {
           <div className="space-y-6 animate-slide-up delay-300">
             <Card className="p-6 bg-gradient-card shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 animate-bounce-in">
-                  <MapPin className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary transition-all duration-300 animate-bounce-in">
+                  <MapPin className="h-6 w-6 text-primary group-hover:text-white" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-foreground mb-2 font-poppins text-lg">📍 Our Location</h3>
@@ -58,8 +58,8 @@ const Contact = () => {
 
             <Card className="p-6 bg-gradient-card shadow-soft border-primary/10 hover:shadow-medical transition-all duration-300 hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-secondary/10 rounded-full group-hover:bg-secondary group-hover:text-secondary-foreground transition-all duration-300 animate-bounce-in delay-100">
-                  <Clock className="h-6 w-6 text-secondary group-hover:text-secondary-foreground" />
+                <div className="p-3 bg-secondary/10 rounded-full group-hover:bg-secondary transition-all duration-300 animate-bounce-in delay-100">
+                  <Clock className="h-6 w-6 text-secondary group-hover:text-white" />
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-2 font-poppins text-lg">⏰ Working Hours</h3>
@@ -117,9 +117,18 @@ const Contact = () => {
                         <DialogTitle className="font-poppins">📞 Contact Information</DialogTitle>
                       </DialogHeader>
                       <div className="space-y-4">
-                        <div className="text-center p-6 bg-gradient-hero rounded-lg">
-                          <h3 className="text-2xl font-bold text-primary font-poppins mb-2">Call Us Now!</h3>
-                          <p className="text-lg font-inter">Ready to help you 24/7</p>
+                        <div className="text-center p-6 bg-white rounded-lg border">
+                          <h3 className="text-2xl font-bold text-primary font-poppins mb-4">Call Us Now!</h3>
+                          <div className="space-y-3">
+                            <div className="p-3 bg-primary/10 rounded-lg">
+                              <p className="text-lg font-bold text-primary">📞 9900088282</p>
+                              <p className="text-sm text-muted-foreground">Primary Contact</p>
+                            </div>
+                            <div className="p-3 bg-secondary/10 rounded-lg">
+                              <p className="text-lg font-bold text-secondary">📞 9900088181</p>
+                              <p className="text-sm text-muted-foreground">Alternate Contact</p>
+                            </div>
+                          </div>
                           <div className="mt-4 space-y-2">
                             <p className="text-sm text-muted-foreground">For appointments & queries</p>
                             <p className="text-sm text-muted-foreground">Expert medical consultation available</p>
@@ -143,9 +152,15 @@ const Contact = () => {
                         <DialogTitle className="font-poppins">🏠 Home Collection Service</DialogTitle>
                       </DialogHeader>
                       <div className="space-y-4">
-                        <div className="text-center p-6 bg-gradient-card rounded-lg">
+                        <div className="text-center p-6 bg-white rounded-lg border">
                           <h3 className="text-xl font-bold text-secondary font-poppins mb-2">Free Home Collection!</h3>
-                          <p className="font-inter">Convenient sample collection at your doorstep</p>
+                          <p className="font-inter text-foreground">Convenient sample collection at your doorstep</p>
+                          <div className="mt-4 space-y-3">
+                            <div className="p-3 bg-primary/10 rounded-lg">
+                              <p className="text-lg font-bold text-primary">📞 9900088282</p>
+                              <p className="text-sm text-muted-foreground">Call for home collection</p>
+                            </div>
+                          </div>
                           <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                             <div className="bg-primary/10 p-3 rounded-lg">
                               <div className="font-semibold text-primary">📅 Same Day</div>
