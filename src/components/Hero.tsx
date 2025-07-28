@@ -18,13 +18,17 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <a href="#services">
               <Button variant="medical" size="lg" className="text-lg px-8 py-6">
-                <Phone className="h-5 w-5" />
+                <Phone className="h-5 w-5 mr-2" />
                 Book Appointment
               </Button>
+            </a>
+            <a href="#contact">
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 View Services
               </Button>
+             </a>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start space-x-4 text-sm text-muted-foreground">
