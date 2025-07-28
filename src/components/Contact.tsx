@@ -142,10 +142,16 @@ const Contact = () => {
                 <div className="text-center">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="appointment" size="lg"  className="w-full text-lg py-6 flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300">
-                        <Calendar className="h-5 w-5" />
-                        🏠 Request Home Collection
-                      </Button>
+                      <Button
+                            variant="appointment"
+                            size="lg"
+                            className="w-full text-lg py-6 flex items-center justify-center gap-2 hover:scale-105 transition-all duration-300"
+                          >
+                            <Calendar className="h-5 w-5 shrink-0" />
+                            <span className="truncate">🏠 Request Home Collection</span>
+                          </Button>
+
+
                     </DialogTrigger>
                     <DialogContent className="animate-fade-in">
                       <DialogHeader>
