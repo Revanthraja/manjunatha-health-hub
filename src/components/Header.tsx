@@ -23,7 +23,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-2">
-            <a href="#contact" className="hidden sm:flex">
+            <a href="#contact">
               <Button variant="appointment" size="sm" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 Book Appointment
