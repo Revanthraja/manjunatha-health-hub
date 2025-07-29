@@ -2,14 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MapPin, Clock, Star } from "lucide-react";
 import { useState, useEffect } from "react";
+import bannerLab from "@/assets/banner-lab.jpg";
+import bannerDiagnostic from "@/assets/banner-diagnostic.jpg";
+import bannerProfessional from "@/assets/banner-professional.jpg";
+import bannerReception from "@/assets/banner-reception.jpg";
+import bannerSamples from "@/assets/banner-samples.jpg";
 
 const Hero = () => {
   const bannerImages = [
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42d?w=1920&q=80",
-    "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=1920&q=80", 
-    "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1920&q=80",
-    "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?w=1920&q=80",
-    "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=1920&q=80"
+    bannerLab,
+    bannerDiagnostic,
+    bannerProfessional,
+    bannerReception,
+    bannerSamples
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
