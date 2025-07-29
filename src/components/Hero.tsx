@@ -39,12 +39,13 @@ const Hero = () => {
               </a>
               <a href="#services" className="w-full sm:w-auto">
                 <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full sm:w-auto text-white border-white hover:bg-white/10"
-                >
-                  View Services
-                </Button>
+                    variant="outline"
+                    size="lg"
+                    className="w-full sm:w-auto text-primary font-semibold"
+                  >
+                    View Services
+                  </Button>
+
 
               </a>
             </div>
