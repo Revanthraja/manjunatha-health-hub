@@ -1,17 +1,53 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MapPin, Clock, Star } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const bannerImages = [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42d?w=1920&q=80",
+    "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=1920&q=80", 
+    "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1920&q=80",
+    "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?w=1920&q=80",
+    "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=1920&q=80"
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % bannerImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [bannerImages.length]);
+
   return (
     <section
       id="home"
-      className="relative min-h-[80vh] bg-gradient-hero flex items-center overflow-hidden"
+      className="relative min-h-[80vh] flex items-center overflow-hidden"
     >
-      {/* Enhanced Overlay for Better Contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40 z-0"></div>
+      {/* Sliding Background Images */}
+      <div className="absolute inset-0">
+        {bannerImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentImage ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Banner ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      {/* Enhanced Overlay for Better Contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60 z-10"></div>
+
+      <div className="container mx-auto px-4 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
           {/* Left Content */}
           <div className="text-center lg:text-left text-white">
