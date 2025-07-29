@@ -14,7 +14,7 @@ const Hero = () => {
     bannerDiagnostic,
     bannerProfessional,
     bannerReception,
-    bannerSamples
+    bannerSamples,
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -29,29 +29,21 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[80vh] flex items-center overflow-hidden"
+      className="relative h-[80vh] sm:min-h-[80vh] flex items-center overflow-hidden"
     >
-      {/* Sliding Background Images */}
-      <div className="absolute inset-0">
-        {bannerImages.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentImage ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={image}
-              alt={`Banner ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      {/* Single Sliding Background Image */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src={bannerImages[currentImage]}
+          alt={`Banner ${currentImage + 1}`}
+          className="w-full h-full object-cover transition-opacity duration-1000"
+        />
       </div>
 
-      {/* Enhanced Overlay for Better Contrast */}
+      {/* Overlay for Contrast */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60 z-10"></div>
 
+      {/* Content */}
       <div className="container mx-auto px-4 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
           {/* Left Content */}
@@ -66,7 +58,7 @@ const Hero = () => {
               and compassionate care at affordable prices.
             </p>
 
-            {/* Call to Action Buttons */}
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8">
               <a href="#contact" className="w-full sm:w-auto">
                 <Button
@@ -80,14 +72,12 @@ const Hero = () => {
               </a>
               <a href="#services" className="w-full sm:w-auto">
                 <Button
-                    variant="outline"
-                    size="lg"
-                    className="w-full sm:w-auto text-primary font-semibold"
-                  >
-                    View Services
-                  </Button>
-
-
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto text-primary font-semibold"
+                >
+                  View Services
+                </Button>
               </a>
             </div>
 
@@ -104,7 +94,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side Cards */}
+          {/* Right Side Info Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 pt-6">
             {/* Location Card */}
             <Card className="p-6 bg-white/90 shadow-medical border-primary/20">
