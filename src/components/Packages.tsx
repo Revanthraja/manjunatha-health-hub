@@ -144,19 +144,20 @@ const Packages = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Card className="max-w-3xl mx-auto p-8 bg-gradient-hero border-primary/20 shadow-medical">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              FREE HOME COLLECTION FACILITY
-            </h3>
-            <p className="text-muted-foreground text-lg mb-6">
-              Convenient sample collection from the comfort of your home. 
-              Available Monday to Saturday from 6:30 AM to 7:30 PM, Sunday 6:30 AM to 1:00 PM
-            </p>
-            <Button variant="medical" size="lg">
-              <Phone className="h-5 w-5" />
-              Schedule Home Collection
-            </Button>
-          </Card>
+          <Card className="relative max-w-3xl mx-auto p-8 bg-gradient-hero border-primary/20 shadow-medical">
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-foreground mb-4">FREE HOME COLLECTION FACILITY</h3>
+                <p className="text-muted-foreground text-lg mb-6">
+                  Convenient sample collection from the comfort of your home. 
+                  Available Monday to Saturday from 6:30 AM to 7:30 PM, Sunday 6:30 AM to 1:00 PM
+                </p>
+                <Button variant="medical" size="lg">
+                  <Phone className="h-5 w-5" />
+                  Schedule Home Collection
+                </Button>
+              </div>
+            </Card>
+
         </div>
       </div>
     </section>
