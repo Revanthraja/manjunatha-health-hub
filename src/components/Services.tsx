@@ -82,7 +82,7 @@ const Services = () => {
             </div>
           </div>
           
-          <Card className="max-w-4xl mx-auto p-8 rounded-xl bg-gradient-to-r from-green-400 via-teal-300 to-purple-600 border border-primary/20 shadow-medical">
+          <Card className="max-w-4xl mx-auto p-8 rounded-xl bg-gradient-to-r from-green-800 via-teal-700 to-purple-700 border border-primary/20 shadow-medical">
             <h3 className="text-2xl font-bold text-white mb-4 text-center font-poppins">
               All Types of Blood & Other Investigations Done Here
             </h3>
@@ -91,12 +91,13 @@ const Services = () => {
               Quality service with compassion at affordable costs.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="px-4 py-2 bg-white/80 text-purple-800 rounded-full shadow-sm">On Time Sample Collection</span>
-              <span className="px-4 py-2 bg-white/80 text-purple-800 rounded-full shadow-sm">Fast & Accurate Reports</span>
-              <span className="px-4 py-2 bg-white/80 text-purple-800 rounded-full shadow-sm">Expert Staff</span>
-              <span className="px-4 py-2 bg-white/80 text-purple-800 rounded-full shadow-sm">Low Cost</span>
+              <span className="px-4 py-2 bg-white/90 text-purple-800 rounded-full shadow-sm">On Time Sample Collection</span>
+              <span className="px-4 py-2 bg-white/90 text-purple-800 rounded-full shadow-sm">Fast & Accurate Reports</span>
+              <span className="px-4 py-2 bg-white/90 text-purple-800 rounded-full shadow-sm">Expert Staff</span>
+              <span className="px-4 py-2 bg-white/90 text-purple-800 rounded-full shadow-sm">Low Cost</span>
             </div>
           </Card>
+
 
 
 
