@@ -82,21 +82,22 @@ const Services = () => {
             </div>
           </div>
           
-          <Card className="max-w-4xl mx-auto p-8 bg-gradient-to-r from-blue-50 via-white to-blue-100 border border-primary/20 shadow-medical">
-            <h3 className="text-2xl font-bold text-foreground mb-4 font-poppins">
-              All Types of Blood & Other Investigations Done Here
-            </h3>
-            <p className="text-muted-foreground text-lg mb-6">
-              We provide comprehensive diagnostic services with fast, accurate reports and expert medical staff.
-              Quality service with compassion at affordable costs.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full">On Time Sample Collection</span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full">Fast & Accurate Reports</span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full">Expert Staff</span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full">Low Cost</span>
-            </div>
-          </Card>
+          <Card className="max-w-4xl mx-auto p-8 bg-gradient-to-r from-violet-200 via-violet-100 to-violet-300 border border-primary/20 shadow-medical">
+          <h3 className="text-2xl font-bold text-green-600 mb-4 text-center font-poppins">
+            All Types of Blood & Other Investigations Done Here
+          </h3>
+          <p className="text-gray-800 text-lg mb-6 text-center">
+            We provide comprehensive diagnostic services with fast, accurate reports and expert medical staff. 
+            Quality service with compassion at affordable costs.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <span className="px-4 py-2 bg-white text-violet-700 rounded-full shadow-sm">On Time Sample Collection</span>
+            <span className="px-4 py-2 bg-white text-violet-700 rounded-full shadow-sm">Fast & Accurate Reports</span>
+            <span className="px-4 py-2 bg-white text-violet-700 rounded-full shadow-sm">Expert Staff</span>
+            <span className="px-4 py-2 bg-white text-violet-700 rounded-full shadow-sm">Low Cost</span>
+          </div>
+        </Card>
+
 
         </div>
       </div>
