@@ -41,10 +41,11 @@ const Hero = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-lg px-8 py-5 text-white border-white"
+                  className="w-full sm:w-auto text-white border-white hover:bg-white/10"
                 >
                   View Services
                 </Button>
+
               </a>
             </div>
 
