@@ -49,11 +49,11 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <div className="flex items-center space-x-3">
                 <Clock className="h-4 w-4" />
-                <span>Mon - Sat: 6:30 AM - 7:30 PM</span>
+                <span>Mon - Sat: 7:00 AM - 9:00 PM</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-4 w-4" />
-                <span>Sunday: 6:30 AM - 1:00 PM</span>
+                <span>Sunday: 7:00 AM - 1:00 PM</span>
               </div>
             </div>
             <div className="mt-6 p-4 bg-primary-foreground/10 rounded-lg">
