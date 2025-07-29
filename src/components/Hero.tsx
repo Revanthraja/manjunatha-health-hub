@@ -8,16 +8,19 @@ const Hero = () => {
       id="home"
       className="relative min-h-[80vh] bg-gradient-hero flex items-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
+      {/* Enhanced Overlay for Better Contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40 z-0"></div>
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
           {/* Left Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <div className="text-center lg:text-left text-white">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Quality Healthcare
               <span className="text-primary block">You Can Trust</span>
             </h1>
-            <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+
+            <p className="text-base sm:text-lg text-white mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Comprehensive diagnostic services with expert staff, accurate reports,
               and compassionate care at affordable prices.
             </p>
@@ -38,7 +41,7 @@ const Hero = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-lg px-8 py-5"
+                  className="w-full sm:w-auto text-lg px-8 py-5 text-white border-white"
                 >
                   View Services
                 </Button>
@@ -46,7 +49,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-x-4 gap-y-2 text-sm text-muted-foreground text-center">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-x-4 gap-y-2 text-sm text-white text-center">
               <div className="flex items-center gap-1">
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 <span>4.8 Rating</span>
@@ -61,7 +64,7 @@ const Hero = () => {
           {/* Right Side Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 pt-6">
             {/* Location Card */}
-            <Card className="p-6 bg-gradient-card shadow-medical border-primary/20">
+            <Card className="p-6 bg-white/90 shadow-medical border-primary/20">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <MapPin className="h-6 w-6 text-primary" />
@@ -78,7 +81,7 @@ const Hero = () => {
             </Card>
 
             {/* Hours Card */}
-            <Card className="p-6 bg-gradient-card shadow-medical border-primary/20">
+            <Card className="p-6 bg-white/90 shadow-medical border-primary/20">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-secondary/10 rounded-full">
                   <Clock className="h-6 w-6 text-secondary" />
@@ -95,7 +98,7 @@ const Hero = () => {
             </Card>
 
             {/* Contact Card */}
-            <Card className="p-6 bg-gradient-card shadow-medical border-primary/20">
+            <Card className="p-6 bg-white/90 shadow-medical border-primary/20">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <Phone className="h-6 w-6 text-primary" />
