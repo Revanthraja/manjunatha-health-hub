@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[80vh] flex items-center overflow-hidden"
+      className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden"
     >
       {/* Sliding Background Images */}
       <div className="absolute inset-0">
@@ -43,7 +43,8 @@ const Hero = () => {
             <img
               src={image}
               alt={`Banner ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
