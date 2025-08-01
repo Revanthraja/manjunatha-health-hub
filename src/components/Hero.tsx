@@ -6,7 +6,7 @@ import bannerLab from "@/assets/banner-lab.jpg";
 import bannerDiagnostic from "@/assets/banner-diagnostic.jpg";
 import bannerProfessional from "@/assets/banner-professional.jpg";
 import bannerReception from "@/assets/banner-reception.jpg";
-import one from "@/assets/one.JPG";
+import one from "@/assets/one.png";
 
 const Hero = () => {
   const bannerImages = [
