@@ -5,42 +5,42 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Priya Sharma",
       rating: 5,
       comment: "Excellent service and professional staff. The diagnostic tests were thorough and results were explained clearly. Highly recommend MDC for anyone needing medical testing.",
       service: "Comprehensive Health Package"
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Rajesh Kumar",
       rating: 5,
       comment: "Quick and efficient blood work. No waiting time and very clean facilities. The staff made me feel comfortable throughout the entire process.",
       service: "Blood Tests"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
+      name: "Anita Patel",
       rating: 5,
       comment: "Professional team and state-of-the-art equipment. My X-ray results were ready within hours. Great experience overall!",
       service: "X-Ray Imaging"
     },
     {
       id: 4,
-      name: "David Wilson",
+      name: "Vikash Singh",
       rating: 5,
       comment: "Outstanding service from booking to results. The technicians were knowledgeable and the facilities are top-notch. Will definitely return for future tests.",
       service: "Cardiac Screening"
     },
     {
       id: 5,
-      name: "Lisa Thompson",
+      name: "Kavitha Reddy",
       rating: 5,
       comment: "Very impressed with the professionalism and accuracy. The staff took time to explain everything and made sure I was comfortable.",
       service: "Women's Health Package"
     },
     {
       id: 6,
-      name: "Robert Davis",
+      name: "Arjun Gupta",
       rating: 5,
       comment: "Fast, reliable, and professional. The online booking system is convenient and the results portal is easy to navigate.",
       service: "Executive Health Check"
