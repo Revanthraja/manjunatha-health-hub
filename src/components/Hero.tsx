@@ -2,19 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MapPin, Clock, Star } from "lucide-react";
 import { useState, useEffect } from "react";
-import bannerLab from "@/assets/banner-lab.jpg";
-import bannerDiagnostic from "@/assets/banner-diagnostic.jpg";
-import bannerProfessional from "@/assets/banner-professional.jpg";
-import bannerReception from "@/assets/banner-reception.jpg";
+import six from "@/assets/six.png";
+import four from "@/assets/four.png";
+import three from "@/assets/three.png";
+import two from "@/assets/two.png";
 import one from "@/assets/one.png";
 
 const Hero = () => {
   const bannerImages = [
-    bannerLab,
-    bannerDiagnostic,
-    bannerProfessional,
-    bannerReception,
-    one
+    one,
+    two,
+    three,
+    four,
+    six
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
