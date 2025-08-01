@@ -1,6 +1,6 @@
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 import mdcLogo from "@/assets/mdc-logo.png";
-
+ 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
