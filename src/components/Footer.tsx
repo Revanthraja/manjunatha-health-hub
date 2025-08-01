@@ -1,5 +1,5 @@
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
-import mdcLogo from "@/assets/mdc-logo.jpg";
+import mdcLogo from "@/assets/mdc-logo.png";
 
 const Footer = () => {
   return (
