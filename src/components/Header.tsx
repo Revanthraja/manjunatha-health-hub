@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
-import mdcLogo from "@/assets/mdc-logo.png";
+import mdcLogo from "@/assets/mdc-logo.jpg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
