@@ -6,7 +6,7 @@ import bannerLab from "@/assets/banner-lab.jpg";
 import bannerDiagnostic from "@/assets/banner-diagnostic.jpg";
 import bannerProfessional from "@/assets/banner-professional.jpg";
 import bannerReception from "@/assets/banner-reception.jpg";
-import bannerSamples from "@/assets/banner-samples.jpg";
+import one from "@/assets/one.JPG";
 
 const Hero = () => {
   const bannerImages = [
@@ -14,7 +14,7 @@ const Hero = () => {
     bannerDiagnostic,
     bannerProfessional,
     bannerReception,
-    bannerSamples
+    one
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
