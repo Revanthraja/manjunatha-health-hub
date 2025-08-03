@@ -23,29 +23,26 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-center mb-6 font-poppins text-primary">
-            <span className="inline-block animate-pulse-soft">
-              Get In Touch
-            </span>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold font-poppins text-primary mb-4">
+            <span className="inline-block animate-pulse-soft">Get In Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-inter">
-            Ready to take care of your health? Contact us for appointments,
-            queries, or home collection services.
+          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-inter">
+            Ready to take care of your health? Contact us for appointments, queries, or home collection services.
             <span className="block mt-2 text-primary font-semibold">
-              Your health is our priority! 🌟
+              Your health is our priority! ✨
             </span>
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
           {/* Left Column */}
           <div className="space-y-6">
             {/* Location Card */}
-            <Card className="p-6 shadow-soft border-primary/10 hover:shadow-md transition-all hover:-translate-y-1 group">
+            <Card className="p-4 md:p-6 shadow-soft border-primary/10 hover:shadow-md transition-all hover:-translate-y-1 group">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary transition-all">
                   <MapPin className="h-6 w-6 text-primary group-hover:text-white" />
@@ -54,7 +51,7 @@ const Contact = () => {
                   <h3 className="font-bold text-foreground mb-2 text-lg font-poppins">
                     📍 Our Location
                   </h3>
-                  <p className="text-muted-foreground font-inter leading-relaxed">
+                  <p className="text-muted-foreground font-inter leading-relaxed text-sm md:text-base">
                     <span className="font-semibold text-primary">
                       105/3/1, 1st Main Rd
                     </span>
@@ -78,13 +75,11 @@ const Contact = () => {
                           📍 Clinic Location
                         </DialogTitle>
                       </DialogHeader>
-                      <p className="font-inter">Navigate to our clinic easily!</p>
-                      <div className="bg-muted p-4 rounded-lg">
+                      <p className="font-inter text-sm">Navigate to our clinic easily!</p>
+                      <div className="bg-muted p-4 rounded-lg text-sm">
                         <p className="font-semibold">Address:</p>
                         <p>
-                          105/3/1, 1st Main Rd, near LAKSHMI THEATRE, Tavarekere,
-                          Krishnappa Garden, 1st Stage, BTM Layout, Bengaluru,
-                          Karnataka 560029
+                          105/3/1, 1st Main Rd, near LAKSHMI THEATRE, Tavarekere, Krishnappa Garden, 1st Stage, BTM Layout, Bengaluru, Karnataka 560029
                         </p>
                       </div>
                     </DialogContent>
@@ -94,7 +89,7 @@ const Contact = () => {
             </Card>
 
             {/* Working Hours Card */}
-            <Card className="p-6 shadow-soft border-primary/10 group hover:shadow-md transition-all hover:-translate-y-1">
+            <Card className="p-4 md:p-6 shadow-soft border-primary/10 group hover:shadow-md transition-all hover:-translate-y-1">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-secondary/10 rounded-full group-hover:bg-secondary transition-all">
                   <Clock className="h-6 w-6 text-secondary group-hover:text-white" />
@@ -103,7 +98,7 @@ const Contact = () => {
                   <h3 className="font-bold text-foreground mb-2 font-poppins text-lg">
                     ⏰ Working Hours
                   </h3>
-                  <div className="space-y-2 text-muted-foreground font-inter">
+                  <div className="space-y-2 text-muted-foreground font-inter text-sm md:text-base">
                     <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-3 rounded-lg">
                       <p className="font-semibold text-primary">
                         <strong>Monday - Saturday:</strong> 7:00 AM - 9:00 PM
@@ -124,16 +119,14 @@ const Contact = () => {
             </Card>
 
             {/* Email Card */}
-            <Card className="p-6 shadow-soft border-primary/10">
+            <Card className="p-4 md:p-6 shadow-soft border-primary/10">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    Email Us
-                  </h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
+                  <p className="text-muted-foreground text-sm md:text-base">
                     mdc.care.info@gmail.com
                   </p>
                 </div>
@@ -144,24 +137,23 @@ const Contact = () => {
           {/* Right Column - Appointment Card */}
           <div className="space-y-6">
             <Card className="p-4 md:p-8 shadow-medical border-primary/20 hover:shadow-glow transition-all">
-              <CardHeader className="text-center pb-6">
-                <CardTitle className="text-2xl md:text-3xl font-bold text-foreground font-poppins">
-                  🩺 Schedule Your Appointment
+              <CardHeader className="text-center pb-4 md:pb-6">
+                <CardTitle className="text-xl md:text-3xl font-bold text-foreground font-poppins">
+                  🧪 Schedule Your Appointment
                 </CardTitle>
-                <p className="text-foreground font-inter text-base md:text-lg">
-                  Call us or visit our clinic for comprehensive diagnostic
-                  services
+                <p className="text-foreground font-inter text-sm md:text-base">
+                  Call us or visit our clinic for comprehensive diagnostic services
                 </p>
               </CardHeader>
 
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-5">
                 {/* Call Button */}
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
                       variant="medical"
                       size="lg"
-                      className="w-full text-lg py-6 flex items-center justify-center gap-2 animate-pulse-soft"
+                      className="w-full text-base md:text-lg py-3 md:py-6 flex items-center justify-center gap-2 animate-pulse-soft"
                     >
                       <Phone className="h-5 w-5" />
                       📞 Call for Appointment
@@ -173,31 +165,21 @@ const Contact = () => {
                         📞 Contact Information
                       </DialogTitle>
                     </DialogHeader>
-                    <div className="text-center p-6 bg-white rounded-lg border space-y-4">
-                      <h3 className="text-2xl font-bold text-primary font-poppins">
+                    <div className="text-center p-4 bg-white rounded-lg border space-y-4 text-sm">
+                      <h3 className="text-xl font-bold text-primary font-poppins">
                         Call Us Now!
                       </h3>
-                      <a
-                        href="tel:9900088282"
-                        className="block p-3 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors"
-                      >
+                      <a href="tel:9900088282" className="block p-3 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors">
                         <p className="text-lg font-bold text-primary">
                           📞 9900088282
                         </p>
-                        <p className="text-sm text-muted-foreground">
-                          Primary Contact
-                        </p>
+                        <p className="text-muted-foreground">Primary Contact</p>
                       </a>
-                      <a
-                        href="tel:9900088181"
-                        className="block p-3 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors"
-                      >
+                      <a href="tel:9900088181" className="block p-3 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors">
                         <p className="text-lg font-bold text-secondary">
                           📞 9900088181
                         </p>
-                        <p className="text-sm text-muted-foreground">
-                          Alternate Contact
-                        </p>
+                        <p className="text-muted-foreground">Alternate Contact</p>
                       </a>
                     </div>
                   </DialogContent>
@@ -206,14 +188,16 @@ const Contact = () => {
                 {/* Home Collection Button */}
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button
-                      variant="appointment"
-                      size="lg"
-                      className="w-full py-6 text-base md:text-lg flex flex-wrap items-center justify-center gap-2 text-center"
-                    >
-                      <Calendar className="h-5 w-5" />
-                      🏠 Request Home Collection
-                    </Button>
+                    <div className="w-full px-4 md:px-0 flex justify-center">
+                      <Button
+                        variant="appointment"
+                        size="lg"
+                        className="w-full max-w-md text-sm md:text-lg py-3 md:py-6 flex items-center justify-center gap-2"
+                      >
+                        <Calendar className="h-5 w-5 flex-shrink-0" />
+                        <span className="inline-block align-middle">🏠 Request Home Collection</span>
+                      </Button>
+                    </div>
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
@@ -221,8 +205,8 @@ const Contact = () => {
                         🏠 Home Collection Service
                       </DialogTitle>
                     </DialogHeader>
-                    <div className="text-center p-6 bg-white rounded-lg border space-y-4">
-                      <h3 className="text-xl font-bold text-secondary font-poppins">
+                    <div className="text-center p-4 bg-white rounded-lg border space-y-4 text-sm">
+                      <h3 className="text-lg font-bold text-secondary font-poppins">
                         Free Home Collection!
                       </h3>
                       <p className="font-inter text-foreground">
@@ -235,17 +219,19 @@ const Contact = () => {
                         <p className="text-lg font-bold text-primary">
                           📞 9900088282
                         </p>
-                        <p className="text-sm text-muted-foreground">
-                          Call for home collection
-                        </p>
+                        <p className="text-muted-foreground">Call for home collection</p>
                       </a>
-                      <div className="grid grid-cols-2 gap-4 text-sm mt-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                         <div className="bg-primary/10 p-3 rounded-lg">
-                          <div className="font-semibold text-primary">📅 Same Day</div>
+                          <div className="font-semibold text-primary">
+                            🗓️ Same Day
+                          </div>
                           <div className="text-muted-foreground">Quick scheduling</div>
                         </div>
                         <div className="bg-secondary/10 p-3 rounded-lg">
-                          <div className="font-semibold text-secondary">🆓 Free Service</div>
+                          <div className="font-semibold text-secondary">
+                            🆓 Free Service
+                          </div>
                           <div className="text-muted-foreground">No extra charges</div>
                         </div>
                       </div>
@@ -254,8 +240,8 @@ const Contact = () => {
                 </Dialog>
 
                 {/* Why Choose Us */}
-                <div className="border-t border-border pt-6">
-                  <h4 className="font-bold text-foreground mb-4 text-center font-poppins text-lg">
+                <div className="border-t border-border pt-4 md:pt-6">
+                  <h4 className="font-bold text-foreground mb-3 text-center font-poppins text-base md:text-lg">
                     ✨ Why Choose Us?
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
@@ -263,45 +249,29 @@ const Contact = () => {
                       <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
                         👨‍⚕️
                       </div>
-                      <div className="font-bold text-primary font-poppins">
-                        Expert Staff
-                      </div>
-                      <div className="text-muted-foreground font-inter">
-                        Qualified professionals
-                      </div>
+                      <div className="font-bold text-primary font-poppins">Expert Staff</div>
+                      <div className="text-muted-foreground font-inter">Qualified professionals</div>
                     </div>
                     <div className="text-center p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-all group">
                       <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
                         ⚡
                       </div>
-                      <div className="font-bold text-secondary font-poppins">
-                        Fast Reports
-                      </div>
-                      <div className="text-muted-foreground font-inter">
-                        Quick accurate results
-                      </div>
+                      <div className="font-bold text-secondary font-poppins">Fast Reports</div>
+                      <div className="text-muted-foreground font-inter">Quick accurate results</div>
                     </div>
                     <div className="text-center p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all group">
                       <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
                         💰
                       </div>
-                      <div className="font-bold text-primary font-poppins">
-                        Affordable
-                      </div>
-                      <div className="text-muted-foreground font-inter">
-                        Low cost services
-                      </div>
+                      <div className="font-bold text-primary font-poppins">Affordable</div>
+                      <div className="text-muted-foreground font-inter">Low cost services</div>
                     </div>
                     <div className="text-center p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-all group">
                       <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
                         🏠
                       </div>
-                      <div className="font-bold text-secondary font-poppins">
-                        Home Collection
-                      </div>
-                      <div className="text-muted-foreground font-inter">
-                        Free pickup service
-                      </div>
+                      <div className="font-bold text-secondary font-poppins">Home Collection</div>
+                      <div className="text-muted-foreground font-inter">Free pickup service</div>
                     </div>
                   </div>
                 </div>
