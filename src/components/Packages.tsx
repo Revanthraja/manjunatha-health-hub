@@ -110,7 +110,7 @@ const Packages = () => {
                       <strong>Package Benefits:</strong> Free home collection, expert analysis, and fast report delivery
                     </p>
                     <a href="#contact" className="w-full block">
-                      <Button className="w-full" size="lg">
+                      <Button className="w-full bg-gradient-to-r from-primary via-secondary to-primary animate-pulse hover:animate-none bg-[length:200%_100%] hover:bg-[position:100%_0] transition-all duration-500" size="lg">
                         <Phone className="h-4 w-4 mr-2" />
                         Book This Package Now
                       </Button>
