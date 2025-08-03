@@ -14,7 +14,9 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <img src={mdcLogo} alt="MDC Logo" className="h-12 w-12" />
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-primary">Sri Manjunatha Diagnostic & Clinic</h1>
+                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-green-500 to-purple-500 bg-clip-text text-transparent">
+                  Sri Manjunatha Diagnostic & Clinic
+                </h1>
             
             </div>
           </div>
