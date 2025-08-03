@@ -94,8 +94,8 @@ const Hero = () => {
               >
                 <Button
                   variant="outline"
-                  size="lg"
-                  className="w-full sm:w-auto text-primary font-semibold px-10 py-7"
+                  size="sm"
+                  className="w-full sm:w-auto text-primary font-medium px-6 py-3 text-sm"
                 >
                   View Services
                 </Button>
