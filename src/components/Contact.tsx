@@ -205,17 +205,21 @@ const Contact = () => {
 
                 {/* Home Collection Button */}
                 <Dialog>
-                  <DialogTrigger asChild>
-                    <Button
-                      variant="appointment"
-                      size="lg"
-                      className="w-full text-lg py-6 flex items-center justify-center gap-2"
-                    >
-                      <Calendar className="h-5 w-5" />
-                      🏠 Request Home Collection
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent>
+                 {/* Home Collection Button */}
+          
+                      <DialogTrigger asChild>
+                        <Button
+                          variant="appointment"
+                          size="lg"
+                          className="w-full py-6 text-base md:text-lg flex flex-wrap items-center justify-center gap-2 text-center"
+                        >
+                          <Calendar className="h-5 w-5" />
+                          🏠 Request Home Collection
+                        </Button>
+                      </DialogTrigger>
+                      {/* ...DialogContent */}
+            
+                      <DialogContent>
                     <DialogHeader>
                       <DialogTitle className="font-poppins">
                         🏠 Home Collection Service
