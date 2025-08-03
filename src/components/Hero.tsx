@@ -69,18 +69,19 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8">
-              {/* 🔥 Animated Gradient Call Button */}
+              {/* Animated Call Button */}
               <a href="tel:9900088282" aria-label="Call Now" className="w-full sm:w-auto">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  animate={{ scale: [1, 1.05, 1], opacity: [1, 0.9, 1] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
+                  animate={{ scale: [1, 1.05, 1], opacity: [1, 0.95, 1] }}
+                  transition={{ duration: 1.6, repeat: Infinity }}
                 >
                   <Button
+                    variant="medical"
                     size="lg"
-                    className="w-full sm:w-auto text-lg px-10 py-6 font-bold rounded-xl bg-gradient-to-r from-primary via-pink-500 to-secondary bg-[length:200%_100%] animate-gradient-x text-white shadow-xl"
+                    className="w-full sm:w-auto text-lg px-10 py-6 flex items-center justify-center gap-2"
                   >
-                    <Phone className="h-6 w-6 mr-2" />
+                    <Phone className="h-5 w-5" />
                     Book Appointment
                   </Button>
                 </motion.div>
