@@ -68,7 +68,8 @@ const Hero = () => {
               and compassionate care at affordable prices.
             </p>
 
-            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8 w-full">
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start gap-4 mb-8 w-full">
               <motion.a
                 href="tel:9900088282"
                 aria-label="Call Now"
@@ -90,12 +91,12 @@ const Hero = () => {
               <a
                 href="#services"
                 aria-label="View Services"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto flex sm:items-center"
               >
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full sm:w-auto text-primary font-medium px-6 py-3 text-sm"
+                  className="w-full sm:w-auto text-primary font-medium px-6 py-4 text-sm h-[56px]"
                 >
                   View Services
                 </Button>
