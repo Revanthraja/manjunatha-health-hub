@@ -1,77 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Phone } from "lucide-react";
-
-const packages = [
-  {
-    name: "Advanced Diabetes Package",
-    originalPrice: "₹2,000",
-    price: "₹1,000.00",
-    discount: "50%",
-    popular: true
-  },
-  {
-    name: "Comprehensive Body Checkup",
-    originalPrice: "₹6,000",
-    price: "₹3,000.00",
-    discount: "50%"
-  },
-  {
-    name: "Diabetes Screening Package",
-    originalPrice: "₹1,000",
-    price: "₹500.00",
-    discount: "50%"
-  },
-  {
-    name: "Healthy Body Package",
-    originalPrice: "₹1,700",
-    price: "₹850.00",
-    discount: "50%"
-  },
-  {
-    name: "Healthy Child Package",
-    originalPrice: "₹1,900",
-    price: "₹850.00",
-    discount: "55%"
-  },
-  {
-    name: "Healthy Heart Package",
-    originalPrice: "₹2,200",
-    price: "₹1,100.00",
-    discount: "50%"
-  },
-  {
-    name: "Healthy Woman Package",
-    originalPrice: "₹5,000",
-    price: "₹2,500.00",
-    discount: "50%"
-  },
-  {
-    name: "Liver & Kidney Package",
-    originalPrice: "₹2,000",
-    price: "₹1,000.00",
-    discount: "50%"
-  },
-  {
-    name: "Senior Citizen Package (M)",
-    originalPrice: "₹4,600",
-    price: "₹2,300.00",
-    discount: "50%"
-  },
-  {
-    name: "Senior Citizen Package (F)",
-    originalPrice: "₹4,000",
-    price: "₹2,000.00",
-    discount: "50%"
-  },
-  {
-    name: "Obesity Package",
-    originalPrice: "₹4,000",
-    price: "₹2,000.00",
-    discount: "50%"
-  }
-];
+import { CheckCircle, Phone, TestTube } from "lucide-react";
+import { healthPackages } from "@/data/packageData";
 
 const Packages = () => {
   return (
@@ -90,56 +22,103 @@ const Packages = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {packages.map((pkg, index) => (
-            <Card key={index} className={`relative group hover:shadow-medical transition-all duration-300 hover:-translate-y-1 ${pkg.popular ? 'border-secondary shadow-glow' : 'border-primary/10'}`}>
-              {pkg.popular && (
-                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-secondary text-secondary-foreground">
-                  Most Popular
-                </Badge>
-              )}
-              
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-lg font-semibold text-foreground leading-tight">
-                  {pkg.name}
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="text-center space-y-4">
-                <div className="space-y-2">
-                  {pkg.originalPrice && (
-                    <p className="text-sm text-muted-foreground line-through">
-                      {pkg.originalPrice}
-                    </p>
+          {healthPackages.map((pkg, index) => (
+            <Dialog key={index}>
+              <DialogTrigger asChild>
+                <Card className={`relative group hover:shadow-medical transition-all duration-300 hover:-translate-y-1 cursor-pointer ${pkg.popular ? 'border-secondary shadow-glow' : 'border-primary/10'}`}>
+                  {pkg.popular && (
+                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-secondary text-secondary-foreground">
+                      Most Popular
+                    </Badge>
                   )}
-                  <p className="text-3xl font-bold text-primary">{pkg.price}</p>
-                  <Badge variant="secondary" className="text-xs">
-                    Save {pkg.discount}
-                  </Badge>
-                </div>
+                  
+                  <CardHeader className="text-center pb-4">
+                    <CardTitle className="text-lg font-semibold text-foreground leading-tight">
+                      {pkg.name}
+                    </CardTitle>
+                  </CardHeader>
+                  
+                  <CardContent className="text-center space-y-4">
+                    <div className="space-y-2">
+                      {pkg.originalPrice && (
+                        <p className="text-sm text-muted-foreground line-through">
+                          {pkg.originalPrice}
+                        </p>
+                      )}
+                      <p className="text-3xl font-bold text-primary">{pkg.price}</p>
+                      <Badge variant="secondary" className="text-xs">
+                        Save {pkg.discount}
+                      </Badge>
+                    </div>
 
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Comprehensive Tests</span>
+                    <div className="space-y-2 text-sm text-muted-foreground">
+                      <div className="flex items-center justify-center space-x-2">
+                        <TestTube className="h-4 w-4 text-primary" />
+                        <span>{pkg.tests.length} Tests Included</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Expert Analysis</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-primary" />
+                        <span>Fast Reports</span>
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-primary font-medium">Click to view tests included</p>
+                  </CardContent>
+                </Card>
+              </DialogTrigger>
+              
+              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-primary flex items-center gap-3">
+                    <TestTube className="h-6 w-6" />
+                    {pkg.name}
+                  </DialogTitle>
+                  <p className="text-muted-foreground">{pkg.description}</p>
+                </DialogHeader>
+                
+                <div className="mt-6 space-y-6">
+                  <div className="flex items-center justify-between p-4 bg-primary/10 rounded-lg">
+                    <div>
+                      <p className="text-2xl font-bold text-primary">{pkg.price}</p>
+                      <p className="text-sm text-muted-foreground line-through">{pkg.originalPrice}</p>
+                    </div>
+                    <Badge variant="secondary" className="text-lg px-4 py-2">
+                      Save {pkg.discount}
+                    </Badge>
                   </div>
-                  <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Expert Analysis</span>
+
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4 text-foreground">
+                      Tests Included ({pkg.tests.length} tests)
+                    </h4>
+                    <div className="grid gap-2">
+                      {pkg.tests.map((test, testIndex) => (
+                        <div key={testIndex} className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+                          <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                          <span className="text-sm font-medium">{test.name}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Fast Reports</span>
+
+                  <div className="p-4 bg-secondary/10 rounded-lg">
+                    <p className="text-sm text-muted-foreground text-center mb-4">
+                      <strong>Package Benefits:</strong> Free home collection, expert analysis, and fast report delivery
+                    </p>
+                    <a href="#contact" className="w-full block">
+                      <Button className="w-full" size="lg">
+                        <Phone className="h-4 w-4 mr-2" />
+                        Book This Package Now
+                      </Button>
+                    </a>
                   </div>
                 </div>
-
-                <a href="#contact" className="w-full">
-                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground flex items-center justify-center gap-2">
-                      <Phone className="h-4 w-4" />
-                      Book Now
-                    </Button>
-                  </a>
-              </CardContent>
-            </Card>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
 
