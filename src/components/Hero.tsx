@@ -69,7 +69,6 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8">
-              {/* Animated Call Button */}
               <a href="tel:9900088282" aria-label="Call Now" className="w-full sm:w-auto">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -79,7 +78,7 @@ const Hero = () => {
                   <Button
                     variant="medical"
                     size="lg"
-                    className="w-full sm:w-auto text-lg px-10 py-6 flex items-center justify-center gap-2"
+                    className="w-full sm:w-auto text-lg px-10 py-7 flex items-center justify-center gap-2"
                   >
                     <Phone className="h-5 w-5" />
                     Book Appointment
