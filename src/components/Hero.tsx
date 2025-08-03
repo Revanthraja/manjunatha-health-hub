@@ -109,7 +109,7 @@ const Hero = () => {
                 <span>4.8 Rating</span>
               </div>
               <span>•</span>
-              <span>1000+ Happy Patients</span>
+              <span>100+ Happy Patients</span>
               <span>•</span>
               <span>Expert Staff</span>
             </div>
