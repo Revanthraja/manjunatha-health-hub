@@ -31,13 +31,13 @@ const Packages = () => {
                       Most Popular
                     </Badge>
                   )}
-                  
+
                   <CardHeader className="text-center pb-4">
                     <CardTitle className="text-lg font-semibold text-foreground leading-tight">
                       {pkg.name}
                     </CardTitle>
                   </CardHeader>
-                  
+
                   <CardContent className="text-center space-y-4">
                     <div className="space-y-2">
                       {pkg.originalPrice && (
@@ -70,7 +70,7 @@ const Packages = () => {
                   </CardContent>
                 </Card>
               </DialogTrigger>
-              
+
               <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
                   <DialogTitle className="text-2xl font-bold text-primary flex items-center gap-3">
@@ -79,7 +79,7 @@ const Packages = () => {
                   </DialogTitle>
                   <p className="text-muted-foreground">{pkg.description}</p>
                 </DialogHeader>
-                
+
                 <div className="mt-6 space-y-6">
                   <div className="flex items-center justify-between p-4 bg-primary/10 rounded-lg">
                     <div>
@@ -109,7 +109,7 @@ const Packages = () => {
                     <p className="text-sm text-muted-foreground text-center mb-4">
                       <strong>Package Benefits:</strong> Free home collection, expert analysis, and fast report delivery
                     </p>
-                    <a href="#contact" className="w-full block">
+                    <a href="tel:9900088282" className="w-full block">
                       <Button className="w-full bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] hover:bg-[position:100%_0] transition-all duration-500" size="lg">
                         <Phone className="h-4 w-4 mr-2" />
                         Book This Package Now
@@ -124,19 +124,20 @@ const Packages = () => {
 
         <div className="mt-16 text-center">
           <Card className="relative max-w-3xl mx-auto p-8 bg-gradient-hero border-primary/20 shadow-medical">
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-4">FREE HOME COLLECTION FACILITY</h3>
-                <p className="text-white/90 text-lg mb-6">
-                  Convenient sample collection from the comfort of your home. 
-                  Available Monday to Saturday from 6:30 AM to 7:30 PM, Sunday 6:30 AM to 1:00 PM
-                </p>
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold text-white mb-4">FREE HOME COLLECTION FACILITY</h3>
+              <p className="text-white/90 text-lg mb-6">
+                Convenient sample collection from the comfort of your home.
+                Available Monday to Saturday from 6:30 AM to 7:30 PM, Sunday 6:30 AM to 1:00 PM
+              </p>
+              <a href="tel:9900088282">
                 <Button variant="medical" size="lg">
                   <Phone className="h-5 w-5" />
                   Schedule Home Collection
                 </Button>
-              </div>
-            </Card>
-
+              </a>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
