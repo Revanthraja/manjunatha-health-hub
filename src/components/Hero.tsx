@@ -68,29 +68,34 @@ const Hero = () => {
               and compassionate care at affordable prices.
             </p>
 
-            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8">
-              <a href="tel:9900088282" aria-label="Call Now" className="w-full sm:w-auto">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  animate={{ scale: [1, 1.05, 1], opacity: [1, 0.95, 1] }}
-                  transition={{ duration: 1.6, repeat: Infinity }}
+            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4 mb-8 w-full">
+              <motion.a
+                href="tel:9900088282"
+                aria-label="Call Now"
+                className="w-full sm:w-auto"
+                whileHover={{ scale: 1.05 }}
+                animate={{ scale: [1, 1.03, 1], opacity: [1, 0.95, 1] }}
+                transition={{ duration: 1.6, repeat: Infinity }}
+              >
+                <Button
+                  variant="medical"
+                  size="lg"
+                  className="w-full sm:w-auto text-lg px-10 py-7 flex items-center justify-center gap-2"
                 >
-                  <Button
-                    variant="medical"
-                    size="lg"
-                    className="w-full sm:w-auto text-lg px-10 py-7 flex items-center justify-center gap-2"
-                  >
-                    <Phone className="h-5 w-5" />
-                    Book Appointment
-                  </Button>
-                </motion.div>
-              </a>
+                  <Phone className="h-5 w-5" />
+                  Book Appointment
+                </Button>
+              </motion.a>
 
-              <a href="#services" aria-label="View Services" className="w-full sm:w-auto">
+              <a
+                href="#services"
+                aria-label="View Services"
+                className="w-full sm:w-auto"
+              >
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-primary font-semibold"
+                  className="w-full sm:w-auto text-primary font-semibold px-10 py-7"
                 >
                   View Services
                 </Button>
