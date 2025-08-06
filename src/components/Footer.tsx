@@ -29,8 +29,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary-foreground/80 mt-0.5" />
                 <div className="text-sm text-primary-foreground/80">
-                  105/3/1, 1st Main Rd, Near Lakshmi Theatre<br />
-                  Tavarekere, BTM Layout, Bengaluru - 560029
+                  105/3/1, 1st Main Rd, near LAKSHMI THEATRE<br />
+                  Tavarekere, Krishnappa Garden, 1st Stage, BTM Layout<br />
+                  Bengaluru, Karnataka - 560029
                 </div>
               </div>
               <div className="flex items-center space-x-3">
